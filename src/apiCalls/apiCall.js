@@ -2,10 +2,11 @@ import { Octokit } from '@octokit/core'
  
 
 const octokit = new Octokit({ 
-  auth: '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'
+  auth: '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'
 });
 
 export const fetchUsers = async (searchQuery)=>{
+  console.log(" funcion getting called");
     const searchResponse = await octokit.request('GET /search/users', {
       q: searchQuery ? searchQuery :"a",
       sort: 'followers'
