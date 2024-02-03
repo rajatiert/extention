@@ -1,8 +1,8 @@
 import { Octokit } from '@octokit/core'
  
-
+const secretToken = process?.env?.AUTHAUTH_TOKEN;
 const octokit = new Octokit({ 
-  auth: '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'
+  auth: secretToken
 });
 
 export const fetchUsers = async (searchQuery)=>{
