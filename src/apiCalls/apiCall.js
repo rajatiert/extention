@@ -2,7 +2,7 @@ import { Octokit } from '@octokit/core'
  
 
 const octokit = new Octokit({ 
-  auth: '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'
+  auth: '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'
 });
 
 export const fetchUsers = async (searchQuery)=>{
